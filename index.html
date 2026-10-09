@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tcharles Clicks – Fotógrafo em Louveira e Região</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #18181b;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #3f3f46;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-zinc-800 selection:text-white custom-scrollbar">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-900 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl tracking-wider font-semibold text-white">TCHARLES<span class="text-zinc-500 font-sans font-light">.CLICKS</span></a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-zinc-400">
+                <a href="#galeria" class="hover:text-white transition-colors">Galeria</a>
+                <a href="#sobre" class="hover:text-white transition-colors">Sobre Mim</a>
+                <a href="#servicos" class="hover:text-white transition-colors">Serviços</a>
+                <a href="#contato" class="hover:text-white transition-colors">Contato</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://wa.me/5519992765819?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20fotográfico!" target="_blank" class="px-5 py-2.5 rounded-full bg-white text-zinc-950 text-sm font-medium hover:bg-zinc-200 transition-all flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-600"></i> Orçamento
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-zinc-300 hover:text-white text-xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-zinc-950 border-b border-zinc-900 py-6 px-6 flex flex-col space-y-4">
+            <a href="#galeria" class="mobile-link text-zinc-400 hover:text-white text-lg font-medium">Galeria</a>
+            <a href="#sobre" class="mobile-link text-zinc-400 hover:text-white text-lg font-medium">Sobre Mim</a>
+            <a href="#servicos" class="mobile-link text-zinc-400 hover:text-white text-lg font-medium">Serviços</a>
+            <a href="#contato" class="mobile-link text-zinc-400 hover:text-white text-lg font-medium">Contato</a>
+            <a href="https://wa.me/5519992765819?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20fotográfico!" target="_blank" class="mobile-link w-full text-center py-3 rounded-full bg-white text-zinc-950 font-medium flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-emerald-600"></i> Solicitar Orçamento
+            </a>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="cid:01 (2).jpg" alt="Hero background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-center space-y-6">
+            <span class="inline-block py-1.5 px-4 rounded-full border border-zinc-800 bg-zinc-900/50 backdrop-blur-md text-xs font-medium text-zinc-400 tracking-widest uppercase">Louveira, Vinhedo, Jundiaí, Valinhos e Campinas</span>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight text-white font-normal">Capturando a essência do instante.</h1>
+            <p class="max-w-xl mx-auto text-zinc-400 text-lg md:text-xl font-light">Transformo momentos reais em memórias visuais atemporais com olhar sensível, espontâneo e foco em cada detalhe da sua história.</p>
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#galeria" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-zinc-950 font-medium hover:bg-zinc-200 transition-all flex items-center justify-center gap-2">Explorar Portfólio <i class="fa-solid fa-arrow-down text-xs"></i></a>
+                <a href="https://wa.me/5519992765819?text=Olá,%20gostaria%20de%20falar%20com%20o%20fotógrafo." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-full border border-zinc-800 bg-zinc-900/40 backdrop-blur-md text-zinc-300 font-medium hover:bg-zinc-800/60 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-500"></i> Falar Comigo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+                <span class="text-xs font-semibold uppercase tracking-widest text-zinc-500 mb-2 block">Trabalhos Selecionados</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-white">Galeria de Fotos</h2>
+            </div>
+            
+            <!-- Category Filter Buttons -->
+            <div id="filter-container" class="flex flex-wrap gap-2 text-sm">
+                <button data-filter="all" class="filter-btn px-4 py-2 rounded-full bg-white text-zinc-950 font-medium transition-all">Todos</button>
+                <button data-filter="gestante" class="filter-btn px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white transition-all">Gestante & Família</button>
+                <button data-filter="retrato" class="filter-btn px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white transition-all">Retratos</button>
+                <button data-filter="aniversario" class="filter-btn px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white transition-all">Aniversários & Eventos</button>
+            </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Item 1 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="gestante" onclick="openLightbox('cid:01 (1).jpg', 'Detalhes do Amor', 'A chegada do novo membro representada nos pequenos sapatos e mãos unidas.')">
+                <img src="cid:01 (1).jpg" alt="Sapatinhos de bebê" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Gestante & Família</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Detalhes do Amor</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="gestante" onclick="openLightbox('cid:01 (2).jpg', 'Espera Feliz', 'Momento especial de carinho e conexão do casal.')">
+                <img src="cid:01 (2).jpg" alt="Casal na estação" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Gestante & Família</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Espera Feliz</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="gestante" onclick="openLightbox('cid:01 (3).jpg', 'Família Completa', 'Ensaio fotográfico externo na histórica estação.')">
+                <img src="cid:01 (3).jpg" alt="Família reunida" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Gestante & Família</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Família Completa</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="gestante" onclick="openLightbox('cid:01 (4).jpg', 'Expectativa', 'Sorrisos compartilhados aguardando o bebê.')">
+                <img src="cid:01 (4).jpg" alt="Casal sorrindo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Gestante & Família</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Expectativa</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="gestante" onclick="openLightbox('cid:01 (5).jpg', 'União e Carinho', 'Gesto de carinho com as mãos sobre a barriga.')">
+                <img src="cid:01 (5).jpg" alt="Mãos na barriga" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Gestante & Família</span>
+                    <h3 class="text-xl font-serif text-white font-medium">União e Carinho</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (6).jpg', 'Estilo Urbano', 'Ensaio fotográfico autêntico com cenário automotivo.')">
+                <img src="cid:01 (6).jpg" alt="Retrato no carro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Estilo Urbano</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (7).jpg', 'Personalidade', 'Retrato detalhado com foco na expressão e luz natural.')">
+                <img src="cid:01 (7).jpg" alt="Retrato detalhe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Personalidade</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (8).jpg', 'Festa Tema Stitch - Detalhes', 'Decoração temática e docinhos personalizados da festa da Jade Emanuelly.')">
+                <img src="cid:01 (8).jpg" alt="Bolo tema Stitch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Festa Tema Stitch</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (9).jpg', 'Família na Festa', 'Momentos de alegria e união comemorando o aniversário da Jade Emanuelly.')">
+                <img src="cid:01 (9).jpg" alt="Familia na festa do Stitch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Família na Festa</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="gestante" onclick="openLightbox('cid:01 (10).jpg', 'Retrato Infantil', 'Olhar expressivo e espontâneo capturado em close.')">
+                <img src="cid:01 (10).jpg" alt="Bebê com macacão listrado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Gestante & Família</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Retrato Infantil</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (11).jpg', 'Carinho de Pai', 'Gestos de afeto durante a comemoração.')">
+                <img src="cid:01 (11).jpg" alt="Pai beijando a filha" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Carinho de Pai</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (12).jpg', 'Princesa Isabelle', 'Retrato da aniversariante com coroa de 15 anos.')">
+                <img src="cid:01 (12).jpg" alt="Isabelle com coroa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Princesa Isabelle</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 13 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (13).jpg', 'Sorriso Radiante', 'Close detalhado do grande dia dos 15 anos.')">
+                <img src="cid:01 (13).jpg" alt="Close Isabelle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Sorriso Radiante</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 14 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (14).jpg', 'Preparativos', 'Momentos de alegria e descontração antes da festa.')">
+                <img src="cid:01 (14).jpg" alt="Isabelle sorrindo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Preparativos e Alegria</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 15 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (15).jpg', 'Detalhes da Festa 15 Anos', 'Bolo personalizado de 15 anos com tema delicado.')">
+                <img src="cid:01 (15).jpg" alt="Bolo de 15 anos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Bolo 15 Anos</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 16 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (16).jpg', 'Comemoração em Família', 'Família reunida ao redor do bolo de 15 anos.')">
+                <img src="cid:01 (16).jpg" alt="Família na festa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Comemoração em Família</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 17 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (17).jpg', 'Hora de Soprar as Velinhas', 'Isabelle apagando as velinhas dos seus 15 anos.')">
+                <img src="cid:01 (17).jpg" alt="Soprando as velinhas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Velinhas de 15 Anos</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 18 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (18).jpg', 'Happy Birthday', 'Registros festivos e decoração elegante.')">
+                <img src="cid:01 (18).jpg" alt="Festa 15 anos deco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Happy Birthday</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 19 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (19).jpg', 'Amizade e Afeto', 'Momentos especiais compartilhados na festa.')">
+                <img src="cid:01 (19).jpg" alt="Isabelle e convidada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Momentos Especiais</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 20 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (20).jpg', 'Família Unida nos 15 Anos', 'Retrato festivo com toda a família reunida na festa.')">
+                <img src="cid:01 (20).jpg" alt="Família na festa de 15 anos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Família Unida</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- Item 21 -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (21).jpg', 'Celebração Inesquecível', 'Sorrisos e alegria marcando esta data tão especial.')">
+                <img src="cid:01 (21).jpg" alt="Celebração 15 anos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Celebração Inesquecível</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- New Items: Aniversário Infantil -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (28).jpg', 'Parabéns com Bolo de Frutas', 'Momento especial do aniversariante com bolo de melancia e frutas frescas.')">
+                <img src="cid:01 (28).jpg" alt="Aniversário bolo de melancia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Parabéns com Bolo de Frutas</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (29).jpg', 'Hora de Soprar as Velinhas', 'Crianças reunidas para apagar a velinha na festa de aniversário.')">
+                <img src="cid:01 (29).jpg" alt="Crianças na festa de aniversário" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Hora de Soprar as Velinhas</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (30).jpg', 'Bolo Temático de Corrida', 'Bolo decorado em azul e xadrez com velas comemorativas.')">
+                <img src="cid:01 (30).jpg" alt="Bolo de aniversário temático" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Bolo Temático de Corrida</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="aniversario" onclick="openLightbox('cid:01 (31).jpg', 'Detalhes da Mesa de Frutas', 'Bolo artesanal de melancia decorado com frutas frescas e doces.')">
+                <img src="cid:01 (31).jpg" alt="Mesa de frutas da festa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Aniversários & Eventos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Detalhes da Mesa de Frutas</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- New Items: Ensaio Feminino -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (22).jpg', 'Sorriso ao Ar Livre', 'Ensaio feminino externo com jaqueta caramelo e cenário natural com lago.')">
+                <img src="cid:01 (22).jpg" alt="Ensaio feminino lago" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Sorriso ao Ar Livre</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (23).jpg', 'Momento de Descanso', 'Retrato aconchegante em banco de madeira rústica.')">
+                <img src="cid:01 (23).jpg" alt="Ensaio feminino banco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Momento de Descanso</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (24).jpg', 'Detalhes e Conexão', 'Fotografia expressiva com flor em destaque.')">
+                <img src="cid:01 (24).jpg" alt="Ensaio feminino flor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Detalhes e Conexão</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (25).jpg', 'Passeio no Parque', 'Caminhada ensolarada em meio à natureza.')">
+                <img src="cid:01 (25).jpg" alt="Ensaio feminino parque" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Passeio no Parque</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (26).jpg', 'Espontaneidade e Movimento', 'Registro dinâmico e alegre no jardim.')">
+                <img src="cid:01 (26).jpg" alt="Ensaio feminino movimento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Espontaneidade e Movimento</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (27).jpg', 'Brilho do Sol', 'Retrato elegante com luz natural de final de tarde.')">
+                <img src="cid:01 (27).jpg" alt="Ensaio feminino sol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Brilho do Sol</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <!-- New Portrait Items -->
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (32).jpg', 'Flor da Natureza', 'Detalhe delicado segurando uma flor amarela com sorriso ao fundo.')">
+                <img src="cid:01 (32).jpg" alt="Flor da Natureza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Flor da Natureza</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (33).jpg', 'Momento de Alegria', 'Risadas espontâneas e diversão ao ar livre.')">
+                <img src="cid:01 (33).jpg" alt="Momento de Alegria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Momento de Alegria</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (34).jpg', 'Sorriso Encantador', 'Retrato próximo destacando a felicidade e os cachos.')">
+                <img src="cid:01 (34).jpg" alt="Sorriso Encantador" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Sorriso Encantador</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (35).jpg', 'Delicadeza e Cuidado', 'Close nas mãos oferecendo uma pequena flor.')">
+                <img src="cid:01 (35).jpg" alt="Delicadeza e Cuidado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Delicadeza e Cuidado</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (36).jpg', 'Luz de Fim de Tarde', 'Iluminação dourada refletindo nos óculos e no sorriso.')">
+                <img src="cid:01 (36).jpg" alt="Luz de Fim de Tarde" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Luz de Fim de Tarde</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/5] cursor-pointer" data-category="retrato" onclick="openLightbox('cid:01 (37).jpg', 'Contemplação Suave', 'Olhar sereno contemplando o horizonte com luz natural.')">
+                <img src="cid:01 (37).jpg" alt="Contemplação Suave" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs uppercase tracking-wider text-zinc-400">Retratos</span>
+                    <h3 class="text-xl font-serif text-white font-medium">Contemplação Suave</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Clique para ampliar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 px-6 border-t border-zinc-900 bg-zinc-900/20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="aspect-[4/5] rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800">
+                    <img src="cid:01 (2).jpg" alt="Tcharles Clicks Fotógrafo" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-zinc-900 border border-zinc-800 p-6 rounded-2xl backdrop-blur-md hidden sm:block">
+                    <p class="font-serif text-3xl font-bold text-white">Tcharles Clicks</p>
+                    <p class="text-xs text-zinc-400 tracking-wide uppercase mt-1">Fotógrafo Profissional</p>
+                </div>
+            </div>
+            
+            <div class="space-y-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-zinc-500 block">Sobre o Fotógrafo</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-white">Registrando cada detalhe da sua história com paixão.</h2>
+                <p class="text-zinc-400 font-light leading-relaxed">
+                    Sou fotógrafo especializado em ensaios fotográficos e cobertura de aniversários e eventos especiais. Também realizamos a cobertura completa de futebol de várzea e artes marciais, além de ensaios corporativos e externos.
+                </p>
+                <p class="text-zinc-400 font-light leading-relaxed">
+                    Atendemos Louveira, Vinhedo, Jundiaí, Valinhos e Campinas com alta qualidade, registro espontâneo e foco total em emocionar através de cada imagem.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div>
+                        <h4 class="font-serif text-2xl text-white font-bold">200+</h4>
+                        <p class="text-xs text-zinc-500 uppercase tracking-wider mt-1">Trabalhos Realizados</p>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-2xl text-white font-bold">100%</h4>
+                        <p class="text-xs text-zinc-500 uppercase tracking-wider mt-1">Dedicação & Carinho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs font-semibold uppercase tracking-widest text-zinc-500 mb-2 block">O que ofereço</span>
+            <h2 class="font-serif text-4xl md:text-5xl text-white">Serviços e Especialidades</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-3xl bg-zinc-900/50 border border-zinc-900 hover:border-zinc-800 transition-all flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center text-white mb-6">
+                        <i class="fa-solid fa-baby text-lg"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-3">Ensaios & Família</h3>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed">Ensaios gestantes, externos, infantis e retratos com olhar sensível e autêntico.</p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-zinc-800/60 flex items-center justify-between text-sm">
+                    <span class="text-zinc-400">Sob consulta</span>
+                    <a href="#contato" class="text-white font-medium hover:underline flex items-center gap-1">Reservar <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+
+            <div class="p-8 rounded-3xl bg-zinc-900/50 border border-zinc-900 hover:border-zinc-800 transition-all flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center text-white mb-6">
+                        <i class="fa-solid fa-cake-candles text-lg"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-3">Aniversários & Eventos</h3>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed">Cobertura completa de aniversários, festas temáticas e momentos especiais com alta qualidade.</p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-zinc-800/60 flex items-center justify-between text-sm">
+                    <span class="text-zinc-400">Sob consulta</span>
+                    <a href="#contato" class="text-white font-medium hover:underline flex items-center gap-1">Reservar <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+
+            <div class="p-8 rounded-3xl bg-zinc-900/50 border border-zinc-900 hover:border-zinc-800 transition-all flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center text-white mb-6">
+                        <i class="fa-solid fa-futbol text-lg"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-3">Esportes & Ação</h3>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed">Cobertura completa de futebol de várzea, artes marciais e eventos esportivos dinâmicos.</p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-zinc-800/60 flex items-center justify-between text-sm">
+                    <span class="text-zinc-400">Sob consulta</span>
+                    <a href="#contato" class="text-white font-medium hover:underline flex items-center gap-1">Reservar <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 px-6 border-t border-zinc-900 bg-zinc-900/10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-zinc-500 block">Vamos conversar?</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-white">Pronto para eternizar sua história?</h2>
+                <p class="text-zinc-400 font-light leading-relaxed">
+                    Entre em contato para solicitar orçamentos, tirar dúvidas sobre disponibilidade de datas ou agendar seu ensaio ou cobertura de evento.
+                </p>
+
+                <div class="space-y-4 pt-4">
+                    <div class="flex items-center gap-4 text-zinc-300">
+                        <div class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white">
+                            <i class="fa-brands fa-whatsapp text-emerald-500 text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-zinc-500 uppercase tracking-wider">WhatsApp</p>
+                            <a href="https://wa.me/5519992765819?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento!" target="_blank" class="font-medium hover:underline">(19) 99276-5819</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 text-zinc-300">
+                        <div class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white">
+                            <i class="fa-brands fa-instagram text-pink-500 text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-zinc-500 uppercase tracking-wider">Instagram</p>
+                            <a href="https://www.instagram.com/tcharles_clicks/" target="_blank" class="font-medium hover:underline">@tcharles_clicks</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 text-zinc-300">
+                        <div class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white">
+                            <i class="fa-solid fa-location-dot text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-zinc-500 uppercase tracking-wider">Região de Atendimento</p>
+                            <p class="font-medium">Louveira, Vinhedo, Jundiaí, Valinhos e Campinas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="p-8 rounded-3xl bg-zinc-900 border border-zinc-800">
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-zinc-400 mb-2">Seu Nome</label>
+                        <input type="text" id="form-name" required class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-zinc-500 transition-colors" placeholder="Nome completo">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-zinc-400 mb-2">Seu Telefone / WhatsApp</label>
+                        <input type="text" id="form-phone" required class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-zinc-500 transition-colors" placeholder="(19) 99999-9999">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-zinc-400 mb-2">Serviço de Interesse</label>
+                        <select id="form-service" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-zinc-500 transition-colors">
+                            <option>Ensaios (Gestante / Família / Externo)</option>
+                            <option>Aniversários & Eventos</option>
+                            <option>Esportes (Futebol de Várzea / Artes Marciais)</option>
+                            <option>Ensaios Corporativos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-zinc-400 mb-2">Mensagem</label>
+                        <textarea id="form-msg" rows="4" required class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-zinc-500 transition-colors" placeholder="Conte um pouco sobre o que você precisa..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-white text-zinc-950 font-medium hover:bg-zinc-200 transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-600 text-lg"></i> Enviar Mensagem via WhatsApp
+                    </button>
+                    <p id="form-success" class="hidden text-center text-emerald-400 text-sm mt-2">Redirecionando para o WhatsApp com sua mensagem!</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-zinc-950/95 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-zinc-400 hover:text-white text-2xl w-12 h-12 flex items-center justify-center rounded-full bg-zinc-900 border border-zinc-800">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl max-h-[90vh] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Ampliada" class="max-h-[70vh] object-contain rounded-xl border border-zinc-800">
+            <div class="mt-4 text-center">
+                <h3 id="lightbox-title" class="font-serif text-2xl text-white"></h3>
+                <p id="lightbox-desc" class="text-sm text-zinc-400 mt-1"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-zinc-900 text-center text-xs text-zinc-500 flex flex-col sm:flex-row items-center justify-between max-w-7xl mx-auto gap-4">
+        <p>&copy; 2026 Tcharles Clicks. Todos os direitos reservados. Atendimento em Louveira e região.</p>
+        <div class="flex space-x-6 text-zinc-400 text-base">
+            <a href="https://www.instagram.com/tcharles_clicks/" target="_blank" class="hover:text-white transition-colors" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/5519992765819" target="_blank" class="hover:text-white transition-colors" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Filtering Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-white', 'text-zinc-950', 'font-medium');
+                    b.classList.add('bg-zinc-900', 'border', 'border-zinc-800', 'text-zinc-400');
+                });
+                btn.classList.remove('bg-zinc-900', 'border', 'border-zinc-800', 'text-zinc-400');
+                btn.classList.add('bg-white', 'text-zinc-950', 'font-medium');
+
+                const filter = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox Logic
+        function openLightbox(src, title, desc) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const titleEl = document.getElementById('lightbox-title');
+            const descEl = document.getElementById('lightbox-desc');
+
+            img.src = src;
+            titleEl.textContent = title;
+            descEl.textContent = desc;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Form Submit to WhatsApp
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const service = document.getElementById('form-service').value;
+            const msg = document.getElementById('form-msg').value;
+
+            const text = `Olá! Meu nome é *${name}* (Tel: ${phone}). Tenho interesse no serviço de *${service}*. Mensagem: ${msg}`;
+            const encoded = encodeURIComponent(text);
+            
+            const successMsg = document.getElementById('form-success');
+            successMsg.classList.remove('hidden');
+
+            setTimeout(() => {
+                window.open(`https://wa.me/5519992765819?text=${encoded}`, '_blank');
+                successMsg.classList.add('hidden');
+                document.getElementById('contact-form').reset();
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
